@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "RomansStory", serif;
+}
+@font-face {
+    font-family: "RomansStory";
+    src: url("assets/fonts/RomansStory.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    font-family: fantasy;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 2em;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.navbar ul li a:hover{
+    background: #fff;
+    color: #2b1055
+}
+
+.ojusLogo{
+    height: 18vh;
+    margin-bottom: 5em;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* padding: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.columnTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+#text {
+    height: 20em;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stars,
+#pyramids {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#ojus24 {
+    margin-top: 41em;
+    
+}
+.mainSection {
+    position: relative;
+    z-index: 1;
+}
+.mainSection .logos .ROE {
+    color: #fff;
+    font-family: "RomansStory", serif;
+    position: relative;
+    z-index: 10000;
+    font-size: 6.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+}
+.logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainSection .navigationLinksDivision {
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    margin-top: 2em;
+}
+.navigation li{
+    list-style: none;
+}
+.navLinks a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5em;    
+}
+.mainSection .ojus24{
+    position: relative;
+    z-index: 10000;
+    color: #fff;
+    font-family: "RomansStory", serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+}
+
+
+
+.mainSection .logos .ROE {
+    color: #fff;
+    font-family: "RomansStory", serif;
+    position: relative;
+    z-index: 10000;
+    font-size: 6.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+}
+
+.logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainSection .navigationLinksDivision {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+.navigation li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.mainSection .ojus24 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10000;
+    color: #fff;
+    font-family: "RomansStory", serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+}
+.ojus24Logo {
+    font-weight: 400;
+}
+@keyframes letterAnimation {
+    from {
+      transform: translateY(-1em);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .mainSection .logos .ROE {
+    color: #fff;
+    font-family: "RomansStory", serif;
+    position: relative;
+    z-index: 10000;
+    font-size: 6.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+    overflow: hidden;
+  }
+  
+  .mainSection .logos .ROE span {
+    display: inline-block;
+    animation: letterAnimation 0.5s forwards;
+    animation-delay: calc(var(--delay) * 0.1s);
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  
+  /* Set delay for each letter individually */
+  .mainSection .logos .ROE span:nth-child(1) { --delay: 1; }
+  .mainSection .logos .ROE span:nth-child(2) { --delay: 2; }
+  .mainSection .logos .ROE span:nth-child(3) { --delay: 3; }
+  .mainSection .logos .ROE span:nth-child(4) { --delay: 4; }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "RomansStory", serif;
+}
+
+@font-face {
+    font-family: "RomansStory";
+    src: url("assets/fonts/RomansStory.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mainSection {
+    position: relative;
+    z-index: 1;
+    cursor: url("assets/images/cursor.png"), pointer;
+}
+
+
+.mainSection .logos .ROE {
+    color: #fff;
+    font-family: "RomansStory", serif;
+    position: relative;
+    z-index: 10000;
+    font-size: 6.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+    overflow: hidden;
+}
+
+.mainSection .logos .ROE span {
+    display: inline-block;
+    animation: letterAnimation 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes letterAnimation {
+  from {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* .navigationLinksDivision, .navigation, li {
+    cursor: url("assets/images/cursor.png"), pointer;
+} */
+.navigationLinksDivision a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    position: relative;
+}
+.navigationLinksDivision a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s ease-in-out;
+}
+.navigationLinksDivision a:hover {
+    cursor: url("assets/images/cursor.png"), pointer;
+}
+.navigationLinksDivision a:hover::after{
+    width: 100%;
+}
+.navigationLinksDivision a.active::after{
+    width: 70%;
+}
+
+
+
+/**/
+/* ... Existing CSS rules ... */
+
+.mainSection .ojus24Logo {
+    position: relative;
+    font-family: "RomansStory", serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 0.15em;
+    margin-left: 0.15em;
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.rotatingNumber {
+    display: inline-block;
+    animation: rotateNumber 4s forwards ease-in-out; /* 4s for one full rotation */
+    transform-origin: center top; /* Set the rotation origin to top center */
+}
+
+@keyframes rotateNumber {
+    0% { transform: rotateX(-90deg) translateY(-50%); opacity: 0; }
+    100% { transform: rotateX(0deg) translateY(0); opacity: 1; }
+}
+#roeText{
+    font-size: 5em;
+}
