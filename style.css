@@ -373,3 +373,84 @@ body {
 #roeText{
     font-size: 5em;
 }
+@media screen and (max-width: 431px) {
+    .navigationLinksDivision{
+        opacity: 0;
+    }
+    #roeText {
+        font-size: 3.5em;
+    }
+    #pyramids{
+        position: absolute;
+        left: 0;
+        /* width: 200px; */
+        object-fit: cover;
+        /* z-index: 0; */
+    }
+
+    .logos{
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.4em;
+        margin-right: 2em;
+        margin-left: 0.5em;
+        /* margin-left: -2em; */
+        /* z-index: 1; */
+    }
+    
+    
+    .menu{
+        color: #fff;
+        font-size: 0.9em;
+        margin-right: 2em;
+    }
+}
+
+
+
+
+
+
+
+/* Add the following styles at the end of your existing CSS */
+
+.dialogBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: hidden;
+    z-index: 10001; /* Ensure it appears above other elements */
+}
+
+.dialogBox.show {
+    display: block;
+}
+
+.maximizeButton {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.maximizeButton::before {
+    content: "□"; /* Maximize icon */
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
