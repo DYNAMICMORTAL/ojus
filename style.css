@@ -483,10 +483,17 @@ body {
     }
     .menu {
         font-family: "RomansStory", serif;
-        margin-right: -0.2em;
+        margin-right: 2em;
     }
     .menu.active #navLinks {
         transform: translateX(0);
+    }
+    .columnMenu {
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
     }
     .hamburger{
         position: absolute;
@@ -503,7 +510,7 @@ body {
         top: 0;
         left: 0;
         z-index: 1001;
-        background: #fff;
+        background: #000;
         width: 100%;
         height: 100%;
         padding: 2rem;
@@ -523,16 +530,32 @@ body {
         outline: none;
         cursor: pointer;
     }
-    .times img{
+    /* .times img{
         width: 48px;
-    }
+    } */
     .mobile-nav ul{
         list-style-type: none;
     }
     .mobile-nav ul li a{
         color:red;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 4rem;
+    }
+    .mobile-nav .navigation a {
+        font-size: 8em;
+        color: #fff;
+    }
+    .mobile-nav .navigation a:active {
+        color: red;
+    }
+    .normalText {
+        font-size: 1.6em;
+        color: #555;
+        font-weight: 400;
+    }
+    .times {
+        color: #fff;
+        font-size: 4em;
     }
 }
 
