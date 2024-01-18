@@ -127,3 +127,42 @@ function createDialogBox(container, imagePath) {
         dialogBox.classList.add("show");
     }, delay);
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", function() {
+        this.classList.toggle("active");
+        navLinks.style.display = this.classList.contains("active") ? "flex" : "none";
+    });
+});
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    const menuIcon = document.querySelector('.menu');
+    
+    menu.classList.toggle('show');
+    menuIcon.classList.toggle('open');
+
+    window.onscroll = () =>
+    {
+        menu.classList.remove('show');
+        menuIcon.classList.remove('open');
+}
+}
+
+
+
+let hamburger = document.querySelector('.hamburger');
+let times = document.querySelector('.times');
+let mobileNav = document.querySelector('.mobile-nav');
+
+hamburger.addEventListener('click', function(){
+    mobileNav.classList.add('open');
+});
+times.addEventListener('click', function(){
+    mobileNav.classList.remove('open');    
+});

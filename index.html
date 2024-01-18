@@ -10,11 +10,21 @@
     <section class="mainSection">
         <img src="assets/images/stars.jpeg" alt="" id="stars">
         <div class="logos">
-            <!-- <h1 class="ROE" id="roeText">Radiance of<br>Euphoria</h1> -->
             <h1 class="ROE" id="roeText">ojus '24</h1>
-            <h5 class="menu">Menu</h5>
+            <button class="hamburger">
+                <h5 class="menu" id="menuBtn" onclick="toggleMenu()">Menu</h5>
+            </button>
+            <div class="mobile-nav">
+                <button class="times"><h5 class="">X</h5></button>
+                <ul>
+                    <li><a href="#"><h1>Home</h1></a></li>
+                    <li><a href="#"><h1>About</h1></a></li>
+                    <li><a href="#"><h1>Services</h1></a></li>
+                    <li><a href="#"><h1>Contact</h1></a></li>
+                    <li><a href="#"><h1>Blog</h1></a></li>
+                </ul>
         </div>
-        <div class="navigationLinksDivision">
+        <div class="navigationLinksDivision" id="navLinks">
             <ul class="navigation">
                 <li class="navLinks"><a href="#">Home</a></li>
                 <li class="navLinks"><a href="#">Events</a></li>
@@ -29,9 +39,6 @@
     </section>
     <section class="secondSection">
         <h1>AP SHAH INSTITUTE OF TECHNOLOGY</h1>
-    </section>
-    <section class="thirdSection">
-        <div id="dialogContainer"></div>
     </section>
     <script src="scripts.js"></script>
 </body>
