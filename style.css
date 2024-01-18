@@ -712,7 +712,9 @@ body {
     
     @keyframes twinkling {
         0% { opacity: 1; }
-        50% { opacity: 0.9; }
+        25% { opacity: 0.99; }
+        50% { opacity: 1; }
+        75% { opacity: 0.99; }
         100% { opacity: 1; }
     }
     
@@ -727,6 +729,8 @@ body {
             transform: translateX(0.9px);
         }
     }
-    
+    .mainDisplay {
+        z-index: 1000;
+    }
     
 }
