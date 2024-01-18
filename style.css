@@ -481,7 +481,10 @@ body {
         transform: translateX(-100%);
         z-index: 10001;
     }
-
+    .menu {
+        font-family: "RomansStory", serif;
+        margin-right: -0.2em;
+    }
     .menu.active #navLinks {
         transform: translateX(0);
     }
