@@ -950,5 +950,76 @@ font-size: 1.5em;
     .mainSection {
         display: none;
     }
-    
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 100;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .insta {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #E1306C;
+        border-radius: 4px;
+        padding: 0px 5px;
+        color: #E1306C;
+        margin-right: 5px;
+    }
+    .insta img {
+        width: 15px;
+        height: 10px;
+        position: relative;
+        padding-right: 6px;
+    }
+    .youtube {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FF0000;
+        border-radius: 4px;
+        padding: 0px 5px;
+        color: #000;
+        margin-right: 5px;
+    }
+    .youtube img {
+        width: 28px;
+        height: 20px;
+        position: relative;
+        padding-right: 6px;
+    }
+    .linkedin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #0077b5;
+        border-radius: 4px;
+        padding: 3px 10px;
+        color: #0077b5;
+        margin-right: 5px;
+    }
+    .linkedin img {
+        position: relative;
+        padding-right: 6px;
+    }
+    .twitter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1DA1F2;
+        border-radius: 4px;
+        padding: 3px 10px;
+        color: #1DA1F2;
+        margin-right: 5px;
+    }
+    .twitter img {
+        position: relative;
+        padding-right: 6px;
+    }
+
 }
