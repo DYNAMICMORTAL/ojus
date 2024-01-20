@@ -106,3 +106,14 @@ function toggleMenu() {
     menu.classList.toggle('open');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Add a delay of 2000 milliseconds (2 seconds)
+    setTimeout(function () {
+        // Hide the preloader
+        document.querySelector('.preloader').style.display = 'none';
+
+        // Display the main content
+        document.querySelector('.mainSection').style.display = 'flex';
+    }, 2300); // You can adjust the delay duration (in milliseconds) as needed
+});
+
