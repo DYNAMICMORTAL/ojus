@@ -735,6 +735,11 @@ body {
     .mainHeadText {
         font-size: 4em;
         color: #fff;
+        font-weight: 400;
+    }
+    .mainSection {
+        overflow: hidden;
+        height: 100vh;
     }
     
 }
