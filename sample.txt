@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ojus</title>
+</head>
+<body>
+    <section class="mainSection">
+        <img src="assets/images/stars.jpeg" alt="" id="stars">
+        <div class="logos">
+            <h1 class="ROE" id="roeText">ojus '24</h1>
+            <button class="hamburger">
+                <h5 class="menu" id="menuBtn" onclick="toggleMenu()">Menu</h5>
+            </button>
+            <div class="mobile-nav">
+                <button class="times"><h3 class="">X</h3></button>
+                <div class="columnMenu">
+                    <ul class="navigation">
+                        <li class="navLinks"><a href="#">Home</a></li>
+                        <li class="navLinks"><a href="#">Events</a></li>
+                        <li class="navLinks"><a href="#">schedulE</a></li>
+                        <li class="navLinks"><a href="#">TEAM</a></li>
+                        <li class="navLinks"><a href="#">coUNcil</a></li>
+                        <li class="navLinks"><a href="#">ghanekar</a></li>
+                    </ul>
+                    <h6 class="normalText">Radiance of Euphoria</h6>
+                </div>
+        </div>
+        </div>
+        <div class="pyramidContainer">
+            <img src="assets/images/background.png" alt="" id="pyramids">
+        </div>
+        <div class="mainDisplay">
+            <h1 class="mainHeadText">Ojus</h1>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html> -->

@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Ojus</title>
 </head>
+
 <body>
+
     <section class="mainSection">
-        <img src="assets/images/stars.jpeg" alt="" id="stars">
+                <svg class="svgClouds" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    
+                    <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="1000" />
+                    
+                    <image class="cloud4" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="1000" />
+                    <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="1000" />
+                </svg>
+
         <div class="logos">
             <h1 class="ROE" id="roeText">ojus '24</h1>
-            <button class="hamburger">
-                <h5 class="menu" id="menuBtn" onclick="toggleMenu()">Menu</h5>
+            <button class="hamburger" onclick="toggleMenu()">
+                <h5 class="menu" id="menuBtn">Menu</h5>
             </button>
             <div class="mobile-nav">
-                <button class="times"><h3 class="">X</h3></button>
+                <button class="times" onclick="toggleMenu()"><h3 class="">X</h3></button>
                 <div class="columnMenu">
                     <ul class="navigation">
                         <li class="navLinks"><a href="#">Home</a></li>
                         <li class="navLinks"><a href="#">Events</a></li>
-                        <li class="navLinks"><a href="#">schedulE</a></li>
-                        <li class="navLinks"><a href="#">TEAM</a></li>
-                        <li class="navLinks"><a href="#">coUNcil</a></li>
-                        <li class="navLinks"><a href="#">ghanekar</a></li>
+                        <li class="navLinks"><a href="#">Schedule</a></li>
+                        <li class="navLinks"><a href="#">Team</a></li>
+                        <li class="navLinks"><a href="#">Council</a></li>
+                        <li class="navLinks"><a href="#">Ghanekar</a></li>
                     </ul>
                     <h6 class="normalText">Radiance of Euphoria</h6>
                 </div>
+            </div>
         </div>
-        </div>
-        <!-- <div class="mainDisplay">
-            <h1>Ojus</h1>
-        </div> -->
-        <div class="pyramidContainer">
-            <img src="assets/images/background.png" alt="" id="pyramids">
-        </div>
-        <div class="mainDisplay">
-            <h1 class="mainHeadText">Ojus</h1>
+        <div class="container">
+            <h1 class="themeText">ChroniclEs <span>of</span> Ages</h1>
+            <h1 class="themeROE">Radiance Of Euphoria</h1>
+            <!-- <button class="btn">Be Radiant</button> -->
+            <!-- <script src="https://cdn.logwork.com/widget/countdown.js"></script> -->
+<!-- <a href="https://logwork.com/countdown-4yh8" class="countdown-timer" data-timezone="Asia/Kolkata" data-date="2024-02-26 14:24">countdown-timer</a> -->
         </div>
     </section>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    </script>
 </body>
+
 </html>

@@ -64,73 +64,6 @@
 
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    animateText("roeText");
-    showImagePopup();
-});
-
-function animateText(elementId) {
-    // Your existing code for text animation
-}
-
-function showImagePopup() {
-    const dialogContainer = document.getElementById("dialogContainer");
-    const imagePaths = [
-        "background2.png", // replace with your actual image file names
-        "cursor.png",
-        // "image3.jpg",
-        // add more image paths as needed
-    ];
-
-    let currentIndex = 0;
-
-    // Add event listener for mainSection scroll
-    document.querySelector('.mainSection').addEventListener('scroll', function() {
-        // Check if scrolled to the bottom
-        if (this.scrollTop + this.clientHeight >= this.scrollHeight) {
-            // Create and show the dialog box with the next image
-            createDialogBox(dialogContainer, imagePaths[currentIndex]);
-            currentIndex = (currentIndex + 1) % imagePaths.length;
-        }
-    });
-}
-
-function createDialogBox(container, imagePath) {
-    // Create a dialog box element
-    const dialogBox = document.createElement("div");
-    dialogBox.classList.add("dialogBox");
-    dialogBox.style.backgroundColor = "#7F3E98"; // Purple color
-
-    // Create an image element
-    const image = document.createElement("img");
-    image.src = "assets/images/" + imagePath; // Adjust the path accordingly
-    image.alt = "Event Image";
-    image.style.width = "100%";
-    image.style.height = "100%";
-
-    // Create maximize and close buttons
-    const maximizeButton = document.createElement("div");
-    maximizeButton.classList.add("maximizeButton");
-    maximizeButton.addEventListener("click", function() {
-        container.removeChild(dialogBox);
-    });
-
-    // Append elements to the dialog box
-    dialogBox.appendChild(maximizeButton);
-    dialogBox.appendChild(image);
-    container.appendChild(dialogBox);
-
-    // Set a random delay for the dialog box
-    const delay = Math.random() * 3000; // Adjust as needed
-    setTimeout(() => {
-        dialogBox.classList.add("show");
-    }, delay);
-}
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const menuBtn = document.getElementById("menuBtn");
     const navLinks = document.getElementById("navLinks");
@@ -166,3 +99,10 @@ hamburger.addEventListener('click', function(){
 times.addEventListener('click', function(){
     mobileNav.classList.remove('open');    
 });
+
+
+function toggleMenu() {
+    var menu = document.querySelector('.mobile-nav');
+    menu.classList.toggle('open');
+}
+
