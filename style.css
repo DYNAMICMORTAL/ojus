@@ -59,15 +59,14 @@ body {
     height: 18vh;
     margin-bottom: 5em;
 }
-section {
+/* section {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* padding: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 section img {
     position: absolute;
     top: 0;
