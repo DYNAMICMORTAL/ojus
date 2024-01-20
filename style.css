@@ -605,7 +605,7 @@ body {
 
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 760px) {
     #roeText {
         font-size: 3em;
         margin-left: 0.5em;
@@ -731,6 +731,10 @@ body {
     }
     .mainDisplay {
         z-index: 1000;
+    }
+    .mainHeadText {
+        font-size: 4em;
+        color: #fff;
     }
     
 }
