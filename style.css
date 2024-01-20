@@ -1021,5 +1021,8 @@ font-size: 1.5em;
         position: relative;
         padding-right: 6px;
     }
+    html {
+        overflow: hidden;
+    }
 
 }
