@@ -59,20 +59,13 @@ body {
     height: 18vh;
     margin-bottom: 5em;
 }
-/* section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
 section img {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
-    left: 0;
+    /* left: 0; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .columnTexts{
     display: flex;
@@ -95,14 +88,7 @@ section img {
 
 
 
-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #stars,
 #pyramids {
@@ -1020,10 +1006,6 @@ font-size: 1.5em;
         position: relative;
         padding-right: 6px;
     }
-    .retroSection {
-        background: #cbcbcb;
-        color: #fff;
-    }
     .retroText {
         display: flex;
         flex-direction: column;
@@ -1032,6 +1014,8 @@ font-size: 1.5em;
     /* ... (previous styles) ... */
 
 .retroSection {
+    display: flex;
+    align-items: center;
     background: #5d5d5d;
     /* background: url(assets/images/chai.png); */
     /* background: url(assets/images/rain.gif); */
@@ -1042,6 +1026,7 @@ font-size: 1.5em;
     /* bottom: 0; */
     /* opacity: 0.5; */
     color: #fff;
+    height: 100vh;
     overflow: hidden; /* Ensure overflow is hidden */
 }
 
@@ -1081,8 +1066,8 @@ font-size: 1.5em;
         position: absolute;
     width: auto;
     margin-left: -345px;
-    margin-top: -680px;
-    height: 100vh;
+    margin-top: -475px;
+    /* height: 100vh; */
     top: 0;
     left: 0;
     transform: translateY(-10%);
@@ -1095,9 +1080,18 @@ font-size: 1.5em;
         font-weight: 400;
         font-size: 4em;
         color: #fff;
-        padding-bottom: 1em;
-        margin-top: -4em;
+        /* padding-bottom: 1em; */
+        /* margin-top: -4em; */
         /* padding */
+    }
+    .retroHeading+h4{
+        padding-bottom: 2em;
+        font-size: 0.8em;
+        font-weight: 900;
+        color: #e5e232;
+    }
+    span{
+        font-weight: 500;
     }
     .aboutUsTexts {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1114,6 +1108,8 @@ font-size: 1.5em;
     }
     .textsContainer {
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
     .aboutUsTexts {
         margin-bottom: 2em;
@@ -1133,6 +1129,19 @@ font-size: 1.5em;
         top: 0;
         left: 0;
     } */
-
+    .retroSunflower {
+        /* position: absolute; */
+        /* bottom: 0; */
+        /* margin-left: 50px; */
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        align-self: center;
+        border: 1px solid transparent;
+        border-radius: 20px;
+    }
+    .balle {
+        height: 200px;
+    }
 
 }
