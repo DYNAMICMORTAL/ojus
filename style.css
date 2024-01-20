@@ -1141,7 +1141,9 @@ font-size: 1.5em;
         border-radius: 20px;
     }
     .balle {
-        height: 200px;
+        /* height: 200px; */
+        padding-top: 50px;
+        padding-bottom: 10px;
     }
     .randomContainer2 {
         display: flex;
@@ -1153,5 +1155,29 @@ font-size: 1.5em;
     }
     .retroHeading {
         padding-right: 10px;
+    }
+    .textsContainer {
+        border: 1px dotted #fff;
+        border-left: 0;
+        border-right: 0;
+    }
+    .randomContainer2 {
+        /* border-bottom: 1px dotted #fff;
+        padding-top: 50px; */
+        border-bottom: 1px dotted #fff;
+        margin-top: 50px;
+        padding-top: 10px;
+        border-top: 1px dotted #fff;
+    }
+    .retroHeading {
+        border-right: 1px solid #fff;
+    }
+    .retroHeading+h4 {
+        padding-left: 10px;
+    }
+    .aboutUsTexts {
+        padding-top: 10px;
+        text-align: left;
+        padding-right: 20px;
     }
 }
