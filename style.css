@@ -843,7 +843,7 @@ body {
     }
 }
 
-body{
+.mainSection {
     background: url(assets/images/mobilebackground.png);
     background-size: cover;
 }
@@ -1021,8 +1021,83 @@ font-size: 1.5em;
         position: relative;
         padding-right: 6px;
     }
-    html {
-        overflow: hidden;
+    .retroSection {
+        background: #cbcbcb;
+        color: #fff;
     }
+    .retroText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* ... (previous styles) ... */
+
+.retroSection {
+    background: #cbcbcb;
+    /* background: url(assets/images/rain.gif); */
+    /* opacity: 0.5; */
+    color: #fff;
+    overflow: hidden; /* Ensure overflow is hidden */
+}
+
+.retroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Relative positioning for absolute child elements */
+}
+
+.cloudContainer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.cloudContainer img {
+    animation: translateClouds 5s linear infinite;
+}
+
+@keyframes translateClouds {
+    0% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(-4%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+/* ... (previous styles) ... */
+    .dcloud {
+        position: absolute;
+    width: auto;
+    margin-left: -345px;
+    margin-top: -680px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateY(-10%);
+    animation: translateClouds 5s linear infinite;
+    }
+    .textsContainer {
+        padding: 1em 1em;
+    }
+    .retroHeading {
+        font-weight: 400;
+        font-size: 4em;
+        color: #000;
+        padding-bottom: 1em;
+        margin-top: -4em;
+    }
+    .aboutUsTexts {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        color: #000;
+    }
+
 
 }
