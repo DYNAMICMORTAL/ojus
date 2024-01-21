@@ -1183,6 +1183,9 @@ font-size: 1.5em;
     /* .preloader {
         background-size: contain;
     } */
+    .scrolling-text span {
+        color: red;
+    }
     
   
   
