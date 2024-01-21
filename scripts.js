@@ -64,6 +64,12 @@
 
 
 
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const menuBtn = document.getElementById("menuBtn");
     const navLinks = document.getElementById("navLinks");
