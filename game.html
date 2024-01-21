@@ -3,46 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/minified/plugins/animation.gsap.min.js"></script> -->
   <style>
-    body {
+    body, html {
       margin: 0;
       padding: 0;
-      height: 200vh; /* Set the height to make the page scrollable */
+      height: 100%;
     }
 
-    .scrolling-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      white-space: nowrap;
+    .container {
+      position: relative;
+      height: 100vh;
       overflow: hidden;
     }
 
-    .scrolling-text {
-      display: inline-block;
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
     }
   </style>
 </head>
 <body>
-
-  <div class="scrolling-container" id="scrollingContainer">
-    <div class="scrolling-text" id="scrollingText">2019 2021 2022 2023</div>
+  <div class="container">
+    <div class="video-container">
+      <video muted loop id="background-video">
+        <source src="bus.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content">
+      <!-- Your website content goes here -->
+    </div>
   </div>
 
   <script>
-    document.addEventListener('scroll', function() {
-      const scrollingContainer = document.getElementById('scrollingContainer');
-      const scrollingText = document.getElementById('scrollingText');
+    document.addEventListener('DOMContentLoaded', function () {
+      var controller = new ScrollMagic.Controller();
+      var video = document.getElementById('background-video');
 
-      // Calculate the scroll percentage
-      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-
-      // Update the transform property to create a scrolling effect
-      scrollingText.style.transform = `translateX(${-scrollPercentage}%)`;
+      var scene = new ScrollMagic.Scene({
+        triggerElement: '.video-container',
+        triggerHook: 0,
+        duration: '100%',
+      })
+      .setTween(gsap.to(video, { playbackRate: 1, ease: 'none' }))
+      .addTo(controller);
     });
   </script>
-
 </body>
 </html>
