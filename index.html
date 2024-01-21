@@ -57,6 +57,11 @@
 <!-- <a href="https://logwork.com/countdown-4yh8" class="countdown-timer" data-timezone="Asia/Kolkata" data-date="2024-02-26 14:24">countdown-timer</a> -->
         </div>
     </section>
+    <section class="thirdSection">
+        <div class="scrolling-container" id="scrollingContainer">
+            <div class="scrolling-text" id="scrollingText">2019 • 2021 • 2022 • 2023</div>
+        </div>
+    </section>
     <section class="retroSection">
             <div class="retroText">
                 <div class="cloudContainer">
@@ -78,79 +83,20 @@
                     </div>
         </div>
     </section>
-    <section class="thirdSection">
-        <div class="scrolling-container" id="scrollingContainer">
-            <div class="scrolling-text" id="scrollingText">2019 2021 2022 2023</div>
-        </div>
-    </section>
+<script>
+    document.addEventListener('scroll', function() {
+      const scrollingContainer = document.getElementById('scrollingContainer');
+      const scrollingText = document.getElementById('scrollingText');
+  
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  
+      scrollingText.style.transform = `translateX(${-scrollPercentage}%)`;
+    });
+  </script>
+  
     <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts.js"></script>
     </script>
 </body>
-<!-- <script>
-    document.addEventListener('scroll', function() {
-      const scrollingContainer = document.getElementById('scrollingContainer');
-      const scrollingText = document.getElementById('scrollingText');
-
-      // Calculate the scroll percentage
-      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-
-      // Update the transform property to create a scrolling effect
-      scrollingText.style.transform = `translateX(${-scrollPercentage}%)`;
-    });
-  </script> -->
-  <!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const scrollingContainer = document.getElementById('scrollingContainer');
-        const scrollingText = document.getElementById('scrollingText');
-
-        // Set the initial transform value to 0
-        scrollingText.style.transform = `translateX(0%)`;
-
-        // Attach the scroll event listener
-        document.addEventListener('scroll', function() {
-            const thirdSection = document.querySelector('.thirdSection');
-
-            // Calculate the scroll percentage relative to the height of the thirdSection
-            const scrollPercentage = (window.scrollY - thirdSection.offsetTop) / thirdSection.offsetHeight * 100;
-
-            // Ensure the scroll percentage is within bounds (0 to 100)
-            const clampedScrollPercentage = Math.max(0, Math.min(100, scrollPercentage));
-
-            // Update the transform property to create a scrolling effect
-            scrollingText.style.transform = `translateX(${-clampedScrollPercentage}%)`;
-        });
-    });
-</script> -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const scrollingContainer = document.getElementById('scrollingContainer');
-        const scrollingText = document.getElementById('scrollingText');
-
-        // Set the initial transform value to 0
-        scrollingText.style.transform = `translateX(0%)`;
-
-        // Set the scaling factor for increased sensitivity (adjust as needed)
-        const scalingFactor = 10;
-
-        // Attach the scroll event listener
-        document.addEventListener('scroll', function() {
-            const thirdSection = document.querySelector('.thirdSection');
-
-            // Calculate the scroll percentage relative to the height of the thirdSection
-            const scrollPercentage = (window.scrollY - thirdSection.offsetTop) / thirdSection.offsetHeight * 100;
-
-            // Apply the scaling factor to increase sensitivity
-            const scaledScrollPercentage = scalingFactor * scrollPercentage;
-
-            // Ensure the scroll percentage is within bounds (0 to 100)
-            const clampedScrollPercentage = Math.max(0, Math.min(100, scaledScrollPercentage));
-
-            // Update the transform property to create a scrolling effect
-            scrollingText.style.transform = `translateX(${-clampedScrollPercentage}%)`;
-        });
-    });
-</script>
-
 </html>

@@ -242,7 +242,6 @@ section img {
     opacity: 0;
   }
   
-  /* Set delay for each letter individually */
   .mainSection .logos .ROE span:nth-child(1) { --delay: 1; }
   .mainSection .logos .ROE span:nth-child(2) { --delay: 2; }
   .mainSection .logos .ROE span:nth-child(3) { --delay: 3; }
@@ -331,10 +330,6 @@ body {
 }
 
 
-
-/**/
-/* ... Existing CSS rules ... */
-
 .mainSection .ojus24Logo {
     position: relative;
     font-family: "RomansStory", serif;
@@ -342,13 +337,13 @@ body {
     font-weight: 400;
     margin-top: 0.15em;
     margin-left: 0.15em;
-    perspective: 1000px; /* Add perspective for 3D effect */
+    perspective: 1000px;
 }
 
 .rotatingNumber {
     display: inline-block;
-    animation: rotateNumber 4s forwards ease-in-out; /* 4s for one full rotation */
-    transform-origin: center top; /* Set the rotation origin to top center */
+    animation: rotateNumber 4s forwards ease-in-out;
+    transform-origin: center top;
 }
 
 @keyframes rotateNumber {
@@ -438,9 +433,6 @@ body {
 }
 
 
-
-
-/* ... Existing CSS rules ... */
 
 #navLinks {
     display: none;
@@ -924,14 +916,13 @@ font-size: 1.5em;
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff; /* You can adjust the background color */
+        background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 9999;
     }
     
-    /* Hide main content initially */
     .mainSection {
         display: none;
     }
@@ -1011,7 +1002,6 @@ font-size: 1.5em;
         flex-direction: column;
         justify-content: space-between;
     }
-    /* ... (previous styles) ... */
 
 .retroSection {
     display: flex;
@@ -1027,14 +1017,14 @@ font-size: 1.5em;
     /* opacity: 0.5; */
     color: #fff;
     height: 100vh;
-    overflow: hidden; /* Ensure overflow is hidden */
+    overflow: hidden;
 }
 
 .retroText {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative; /* Relative positioning for absolute child elements */
+    position: relative; 
 }
 
 .cloudContainer {
@@ -1061,7 +1051,6 @@ font-size: 1.5em;
     }
 }
 
-/* ... (previous styles) ... */
     .dcloud {
         position: absolute;
     width: auto;
@@ -1180,65 +1169,22 @@ font-size: 1.5em;
         text-align: left;
         padding-right: 20px;
     }
-
-.thirdSection {
-    height: 300vh; /* Adjust the height as needed */
-    overflow: hidden;
-    /* position: relative; */
-  }
-  .scrolling-container {
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    right: 0;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .scrolling-text {
-    display: inline-block;
-  }
-  .scrolling-container {
-    /* position: fixed; */
-    /* top: 0; */
-    padding-left: 2em;
-    /* left: 0; */
-    font-size: 2em;
-    /* right: 0; */
-    width: 100vw;
-    white-space: nowrap;
-    /* margin-right: -48em; */
-    overflow: hidden;
-
-  }
-  .scrolling-container {
-    font-size: 4em;
-    padding-top: 2em;
-    color: #fff;
-    background: #000;
-    padding-bottom: 2em;
-  }
-  /* .thirdSection {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-   */
-  .thirdSection .scrolling-container {
-    position: relative;
-    top: 0; /* Adjust the top position to center the text vertically */
-    left: 0;
-    right: 0;
-    /* transform: translateY(-70%); */
-    white-space: nowrap;
-    overflow: hidden;
-  }
+    .thirdSection {
+        color: #fff;
+        background: #000;
+    }
+    .scrolling-text {
+        font-size: 1.5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-left: 4em;
+        /* margin-right: -6em; */
+    }
+    /* .preloader {
+        background-size: contain;
+    } */
+    
   
-  .scrolling-text {
-    display: inline-block;
-    font-size: 1em;
-    /* padding-left: 2em; */
-  }
   
   
 }
