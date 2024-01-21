@@ -1180,14 +1180,65 @@ font-size: 1.5em;
         text-align: left;
         padding-right: 20px;
     }
-    /* ... (previous styles) ... */
 
 .thirdSection {
-    height: 100vh; /* Adjust the height as needed */
+    height: 300vh; /* Adjust the height as needed */
+    overflow: hidden;
+    /* position: relative; */
+  }
+  .scrolling-container {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .scrolling-text {
+    display: inline-block;
+  }
+  .scrolling-container {
+    /* position: fixed; */
+    /* top: 0; */
+    padding-left: 2em;
+    /* left: 0; */
+    font-size: 2em;
+    /* right: 0; */
+    width: 100vw;
+    white-space: nowrap;
+    /* margin-right: -48em; */
+    overflow: hidden;
+
+  }
+  .scrolling-container {
+    font-size: 4em;
+    padding-top: 2em;
+    color: #fff;
+    background: #000;
+    padding-bottom: 2em;
+  }
+  /* .thirdSection {
+    height: 100vh;
     overflow: hidden;
     position: relative;
   }
+   */
+  .thirdSection .scrolling-container {
+    position: relative;
+    top: 0; /* Adjust the top position to center the text vertically */
+    left: 0;
+    right: 0;
+    /* transform: translateY(-70%); */
+    white-space: nowrap;
+    overflow: hidden;
+  }
   
-
+  .scrolling-text {
+    display: inline-block;
+    font-size: 1em;
+    /* padding-left: 2em; */
+  }
+  
   
 }

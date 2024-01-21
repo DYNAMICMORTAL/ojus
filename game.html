@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* Set the height to make the page scrollable */
+    }
+
+    .scrolling-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scrolling-container" id="scrollingContainer">
+    <div class="scrolling-text" id="scrollingText">2019 2021 2022 2023</div>
+  </div>
+
+  <script>
+    document.addEventListener('scroll', function() {
+      const scrollingContainer = document.getElementById('scrollingContainer');
+      const scrollingText = document.getElementById('scrollingText');
+
+      // Calculate the scroll percentage
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+      // Update the transform property to create a scrolling effect
+      scrollingText.style.transform = `translateX(${-scrollPercentage}%)`;
+    });
+  </script>
+
+</body>
+</html>
