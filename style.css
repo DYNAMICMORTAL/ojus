@@ -1178,13 +1178,23 @@ font-size: 1.5em;
         padding-top: 2em;
         padding-bottom: 2em;
         margin-left: 4em;
+        font-weight: 700;
+        user-select: none;
         /* margin-right: -6em; */
     }
     /* .preloader {
         background-size: contain;
     } */
     .scrolling-text span {
-        color: red;
+        color: #00ffae;
+        font-weight: 900;
+        user-select: none;
+    }
+    /* html {
+        user-select: none;
+    } */
+    .mainSection {
+        justify-content: center;
     }
     
   
