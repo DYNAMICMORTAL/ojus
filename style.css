@@ -1043,6 +1043,13 @@ dotlottie-player {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    .preGalleryText2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: end;
+    }
     .inclined-plane {
         position: relative;
         height: 20px; /* Adjust the height of the inclined plane */
@@ -1067,6 +1074,16 @@ dotlottie-player {
         bottom: 0;
         left: 0;
         animation: roll 5s linear forwards; /* Adjust the animation duration */
+    }
+    .left-to-right .ball {
+        animation-direction: normal;
+    }
+
+    .right-to-left .ball {
+        /* animation-delay: 2s; */
+        left: calc(100% - 101px);
+        animation-direction: reverse;
+        animation-delay: 2s;
     }
 
     @keyframes roll {
