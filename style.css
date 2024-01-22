@@ -1141,13 +1141,13 @@ font-size: 1.5em;
         border-right: 0;
     }
     .randomContainer2 {
-        border-bottom: 1px dotted #fff;
+        border-bottom: 1px dotted #000;
         margin-top: 50px;
         padding-top: 10px;
-        border-top: 1px dotted #fff;
+        border-top: 1px dotted #000;
     }
     .retroHeading {
-        border-right: 1px solid #fff;
+        border-right: 1px solid #000;
     }
     .retroHeading+h4 {
         padding-left: 10px;
@@ -1309,5 +1309,16 @@ dotlottie-player {
     }
     .mainSection {
         height: 100vh;
+    }
+    .retroSection {
+        background: url(assets/images/paperEffect.gif);
+        /* filter: saturate(50%); */
+    }
+    .retroHeading {
+        color: #000;
+        border-right: 1px solid #000;
+    }
+    .aboutUsTexts {
+        color: #000;
     }
 }
