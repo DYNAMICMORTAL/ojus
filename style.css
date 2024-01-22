@@ -1031,13 +1031,13 @@ font-size: 1.5em;
 
 @keyframes translateClouds {
     0% {
-        transform: translateY(-10%);
+        transform: translateY(20%);
     }
     50% {
-        transform: translateY(-4%);
+        transform: translateY(2%);
     }
     100% {
-        transform: translateY(-10%);
+        transform: translateY(20%);
     }
 }
 
@@ -1141,8 +1141,6 @@ font-size: 1.5em;
         border-right: 0;
     }
     .randomContainer2 {
-        /* border-bottom: 1px dotted #fff;
-        padding-top: 50px; */
         border-bottom: 1px dotted #fff;
         margin-top: 50px;
         padding-top: 10px;
@@ -1308,5 +1306,8 @@ dotlottie-player {
     }
     .event-timer div p {
         font-size: 20px;
+    }
+    .mainSection {
+        height: 100vh;
     }
 }
