@@ -1034,6 +1034,46 @@ dotlottie-player {
         color: #fff;
         opacity: 0.2;
     }
+    .preGalleryText {
+        margin: 0;
+    }
+    .preGalleryText {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .inclined-plane {
+        position: relative;
+        height: 20px; /* Adjust the height of the inclined plane */
+        overflow: hidden;
+        margin-top: -10px; /* Adjust the negative margin to align with the text */
+    }
+
+    .horizontal-plane {
+        position: absolute;
+        width: 100%; /* Occupies full width */
+        height: 100%;
+        background: linear-gradient(0deg, #fff 5%, transparent 5%, transparent 50.5%, #000 50.5%);
+        overflow: hidden;
+    }
+
+    .ball {
+        position: absolute;
+        width: 20px; /* Adjust the size of the ball */
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: 0;
+        left: 0;
+        animation: roll 5s linear forwards; /* Adjust the animation duration */
+    }
+
+    @keyframes roll {
+        to {
+            transform: translateX(calc(100vw)); /* Move the ball to the end of the screen */
+        }
+    }
     
     
 }
