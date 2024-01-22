@@ -110,7 +110,7 @@ section img {
     color: #fff;
     font-family: "RomansStory", serif;
     position: relative;
-    z-index: 10000;
+    z-index: 100;
     font-size: 6.5em;
     font-weight: 400;
     margin-top: 0.15em;
@@ -141,7 +141,7 @@ section img {
 }
 .mainSection .ojus24{
     position: relative;
-    z-index: 10000;
+    z-index: 100;
     color: #fff;
     font-family: "RomansStory", serif;
     font-size: 2.5em;
@@ -156,7 +156,7 @@ section img {
     color: #fff;
     font-family: "RomansStory", serif;
     position: relative;
-    z-index: 10000;
+    z-index: 100;
     font-size: 6.5em;
     font-weight: 400;
     margin-top: 0.15em;
@@ -223,7 +223,7 @@ section img {
     color: #fff;
     font-family: "RomansStory", serif;
     position: relative;
-    z-index: 10000;
+    z-index: 100;
     font-size: 6.5em;
     font-weight: 400;
     margin-top: 0.15em;
@@ -262,7 +262,7 @@ section img {
     color: #fff;
     font-family: "RomansStory", serif;
     position: relative;
-    z-index: 10000;
+    z-index: 100;
     font-size: 6.5em;
     font-weight: 400;
     margin-top: 0.15em;
@@ -1082,7 +1082,7 @@ dotlottie-player {
     .right-to-left .ball {
         left: calc(100% - 101px);
         animation-direction: reverse;
-        animation-delay: 2s;
+        animation-delay: 4s;
     }
 
     @keyframes roll {
@@ -1092,6 +1092,21 @@ dotlottie-player {
     }
     .galleryHeader h1 {
         color: #ffffe9;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .container img {
+        width: 220px;
+        aspect-ratio: 1/1;
+        margin-bottom: 40px;
+    }
+    .event-timer {
+        z-index: -1;
+    }
+    #roeText {
+        z-index: -1;
     }
     
 }
