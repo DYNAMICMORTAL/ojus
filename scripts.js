@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Display the main content
         document.querySelector('.mainSection').style.display = 'flex';
-    }, 2300); // You can adjust the delay duration (in milliseconds) as needed
+    }, 2300);
 });
 
 
