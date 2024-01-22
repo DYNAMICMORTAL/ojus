@@ -1111,3 +1111,28 @@ dotlottie-player {
     
 }
 
+@media screen and (max-width: 380px) {
+    /* .cloud1, .cloud2, .cloud3, .cloud4 {
+        transform: scale(50%);
+    } */
+    .svgClouds {
+        /* margin-top: 80px; */
+        margin-bottom: -50px;
+        transform: scale(150%);
+    }
+    .container img {
+        width: 150px;
+        aspect-ratio: 1/1;
+        margin-bottom: 40px;
+    }
+    .themeText {
+        font-size: 25px;
+    }
+    .themeROE {
+        font-size: 13.5px;
+    }
+    .event-timer {
+        transform: scale(70%);
+        margin-top: 4.5vh;
+    }
+}
