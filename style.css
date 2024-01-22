@@ -1280,6 +1280,9 @@ background: linear-gradient(to right, #4286f4, #717d99);
     display: inline-flex;
     border-radius: 50px;
     position: relative;
+    box-shadow: 10px 10px 25px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(255,255,255,0.75);
 }
 
 .event-timer div{
@@ -1298,8 +1301,12 @@ dotlottie-player {
     color: #fff;
     font-weight: 400;
     font-size: 1px;
+    width: 80px;
 }
     .event-timer div span {
-        font-size: 10px;
+        font-size: 8px;
+    }
+    .event-timer div p {
+        font-size: 20px;
     }
 }
