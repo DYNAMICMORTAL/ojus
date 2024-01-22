@@ -1288,7 +1288,11 @@ background: linear-gradient(to right, #4286f4, #717d99);
 -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
 border: none;
 }
-
+    .aboutUsTexts span {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: red;
+    }
 .event-timer div{
     flex-basis: 100px;
 }
