@@ -1200,7 +1200,7 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
         margin-top: 10vh;
         display: flex;
         font-size: large;
-        border: #4b91b5 outset 1px;
+        /* border: #4b91b5 outset 1px; */
         border-radius: 50px;
     }
     
