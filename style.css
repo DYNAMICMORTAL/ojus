@@ -1090,7 +1090,9 @@ dotlottie-player {
             transform: translateX(calc(100vw));
         }
     }
-    
+    .galleryHeader h1 {
+        color: #ffffe9;
+    }
     
 }
 
