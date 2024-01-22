@@ -1294,5 +1294,12 @@ dotlottie-player {
     height: 100%;
     z-index: -1; /* Place the Lottie animation behind the countdown timer */
 }
-
+.event-timer div {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1px;
+}
+    .event-timer div span {
+        font-size: 10px;
+    }
 }
