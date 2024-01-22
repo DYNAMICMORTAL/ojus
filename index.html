@@ -199,33 +199,25 @@ var x = setInterval(function() {
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
-    // Get the bounding rectangle of the section
     const observerOptions = {
-    threshold: 0.5, // Trigger when at least 50% of the target is visible
+    threshold: 0.5, 
   };
-
-  // Function to handle the intersection changes
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Target is now in the viewport, start the animation
         document.querySelector('.left-to-right .ball').style.animationPlayState = 'running';
         document.querySelector('.right-to-left .ball').style.animationPlayState = 'running';
       } else {
-        // Target is out of the viewport, pause the animation
         document.querySelector('.left-to-right .ball').style.animationPlayState = 'paused';
         document.querySelector('.right-to-left .ball').style.animationPlayState = 'paused';
       }
     });
   };
 
-  // Create an Intersection Observer with the callback and options
   const observer = new IntersectionObserver(handleIntersection, observerOptions);
 
-  // Target the element you want to observe
   const targetElement = document.querySelector('.preGallerySection');
 
-  // Start observing the target element
   observer.observe(targetElement);
     
     </script>

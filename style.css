@@ -1052,14 +1052,14 @@ dotlottie-player {
     }
     .inclined-plane {
         position: relative;
-        height: 20px; /* Adjust the height of the inclined plane */
+        height: 20px;
         overflow: hidden;
-        margin-top: -10px; /* Adjust the negative margin to align with the text */
+        margin-top: -10px;
     }
 
     .horizontal-plane {
         position: absolute;
-        width: 100%; /* Occupies full width */
+        width: 100%; 
         height: 100%;
         background: linear-gradient(0deg, #fff 5%, transparent 5%, transparent 50.5%, #000 50.5%);
         overflow: hidden;
@@ -1067,20 +1067,19 @@ dotlottie-player {
 
     .ball {
         position: absolute;
-        width: 20px; /* Adjust the size of the ball */
+        width: 20px;
         height: 20px;
         background-color: #fff;
         border-radius: 50%;
         bottom: 0;
         left: 0;
-        animation: roll 5s linear forwards; /* Adjust the animation duration */
+        animation: roll 5s linear forwards;
     }
     .left-to-right .ball {
         animation-direction: normal;
     }
 
     .right-to-left .ball {
-        /* animation-delay: 2s; */
         left: calc(100% - 101px);
         animation-direction: reverse;
         animation-delay: 2s;
@@ -1088,7 +1087,7 @@ dotlottie-player {
 
     @keyframes roll {
         to {
-            transform: translateX(calc(100vw)); /* Move the ball to the end of the screen */
+            transform: translateX(calc(100vw));
         }
     }
     
