@@ -1017,7 +1017,7 @@ dotlottie-player {
         height: 100vh;
     }
     .retroSection {
-        background: url(assets/images/paperEffect.gif);
+        background: url(assets/images/paperEffect.webp);
     }
     .retroHeading {
         color: #000;
