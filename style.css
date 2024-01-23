@@ -1210,6 +1210,25 @@ dotlottie-player {
         bottom: 50%;
         transform: translate(50%, 50%);
     }
+    .picture1 {
+        height: auto;
+    }
+    .picture2 {
+        float: right;
+        margin-right: -20px;
+        padding-top: 30px;
+        height: auto;
+    }
+    .picture3 {
+        height: auto;
+        margin-top: 30px;
+    }
+    .picture4 {
+        float: right;
+        margin-right: -20px;
+        height: auto;
+        margin-top: 30px;
+    }
     
     
 }
