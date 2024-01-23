@@ -1108,6 +1108,7 @@ dotlottie-player {
     }
     .galleryHeader h1 {
         color: #ffffe9;
+        font-size: 40px;
     }
     .container {
         justify-content: center;
