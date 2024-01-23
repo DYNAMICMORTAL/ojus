@@ -1024,12 +1024,12 @@ dotlottie-player {
         filter: brightness(30%);
     }
     
-    .galleryHeader {
+    /* .galleryHeader {
         z-index: 1; 
-    }
+    } */
     
     .gallery {
-        z-index: 1; 
+        z-index: 0; 
         padding: 20px;
         color: #fff;
         /* opacity: 0.2; */
