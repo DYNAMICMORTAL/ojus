@@ -1266,3 +1266,7 @@ dotlottie-player {
     background: #000;
     color: #fff;
 }
+.logos a {
+    text-decoration: none;
+    color: #fff;
+}
