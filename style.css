@@ -13,85 +13,9 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-.navbar {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-.logo {
-    font-family: fantasy;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.5s;
-
-}
-.navbar ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navbar ul li {
-    list-style: none;
-    margin-left: 2em;
-}
-.navbar ul li a{
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    border-radius: 20px;
-}
-.navbar ul li a:hover{
-    background: #fff;
-    color: #2b1055
-}
-
-.ojusLogo{
-    height: 18vh;
-    margin-bottom: 5em;
-}
-
 section img {
     top: 0;
     width: 100%;
-}
-.columnTexts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-}
-#text {
-    height: 20em;
-    color: #fff;
-}
-
-
-
-#stars,
-#pyramids {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-#ojus24 {
-    margin-top: 41em;
-    
 }
 .mainSection {
     position: relative;
