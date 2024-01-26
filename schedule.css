@@ -1,7 +1,19 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Pirata One', cursive;
+	font-family: "RomansStory";
+    src: url("assets/fonts/RomansStory.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body{
+	background: url(./assets/bg.png) no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	height: max-content;
+	width: 100%;
   }
 
   h1{
@@ -16,11 +28,11 @@
  }
 
   .home {
-	background: url(./assets/background.jpg) no-repeat;
+	/* background: url(./assets/background.jpg) no-repeat;
 	background-size: cover;
 	background-position-x: center;
-	background-position-y: center;
-	padding: 0px 430px;
+	background-position-y: center; */
+	padding: 100px 500px;
   }
 
   li{
@@ -35,7 +47,7 @@
   .start ul li:nth-child(odd) {
 	background: url(./assets/pline-2.png) 65px top no-repeat;
 	/* padding-top: 30px !important; */
-	padding-left: 590px !important;
+	padding-left: 390px !important;
   }
   
   .start ul li:nth-child(even) {
@@ -61,6 +73,11 @@
   .start ul li .media-body {
 	max-width: 390px;
   }
+
+  .start ul li .media-body h4{
+	font-weight: bold;
+  }
+  
   
   .start ul li p {
 	color: black;
@@ -85,7 +102,7 @@
   }
 
   .skull{
-	background: url(./assets/skull-r.png) no-repeat;
+	background: url(./assets/skull-clrchng.png) no-repeat;
 	height: 200px;
 	width: 200px;
 	background-size: contain;
@@ -114,7 +131,7 @@
   }
 
   /* animations */
-.compass{
+/* .compass{
 	background: url(./assets/compass-removebg.png);
 	background-size: cover;
 	width: 450px;
@@ -123,7 +140,7 @@
 	left: 0;
 	top: 300px;
 	animation: rotate360 5s infinite linear;
-}
+} */
 
 .mountain1{
 	background: url(./assets/mountain-removebg.png) no-repeat;
@@ -131,8 +148,8 @@
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	right: 400px;
-	top: 800px;
+	right: 278px;
+    top: 811px;
 }
 
 .mountain2{
@@ -161,7 +178,7 @@
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	right: 500px;
+	right: 275px;
 	top: 770px;
 }
 
@@ -178,13 +195,33 @@
 
   @media screen and (max-width: 768px) {
 	body{
-		width: 300%;
+		/* width: 100%; */
 		height: 140rem;
+		height: max-content;
 	}
 
-	  
+	.home{
+		padding: 100px 250px;
+	}
+
 	.start ul li .media-body {
-		max-width: 0px;
+		max-width: 400px;
+		font-size: 2rem;
 	  }
+	
+
+	.start ul li:nth-child(odd) {
+		background: url(./assets/pline-2.png) 100px top no-repeat;
+		/* padding-top: 30px !important; */
+		padding-left: 360px !important;
+	  }
+
+	.home{
+		/* padding: 0px 150px; */
+	} 
 	  
+  /* animations */
+	.compass,.mountain1,.mountain2,.mountain3,.mountain4,.skull{
+		display: none;
+	}
   }
