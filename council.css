@@ -1,0 +1,156 @@
+@font-face {
+  font-family: RomansStory;
+  src: url(assets/fonts/RomansStory.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url(assets/images/bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: RomansStory;
+}
+.overlay {
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.502);
+}
+.main {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+  font-weight: bold;
+}
+.subtitle {
+  font-size: 30px;
+}
+.grid1 {
+  display: grid;
+  gap: 30px;
+  width: 60vw;
+  grid-template-columns: 1fr 1fr;
+}
+.grid2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 60vw;
+  margin-bottom: 30px;
+}
+.card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.profile-img {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  background-color: bisque;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  mask-image: url(assets/images/shield-lg.svg);
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.name {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+.designation {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.grid2 .profile-img {
+  width: 100%;
+  height: auto;
+  min-height: 160px;
+  mask-image: url(assets/images/shield-md.svg);
+}
+.grid2 .name {
+  font-size: 20px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.grid2 .designation {
+  font-size: 15px;
+}
+.designation-headline {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 28px;
+}
+.grid3 {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid3 .profile-img {
+  width: 100%;
+  min-height: 150px;
+  height: auto;
+  mask-image: url(assets/images/shield-sm.svg);
+}
+.grid3 .name {
+  font-size: 18px;
+}
+@media screen and (max-width: 426px) {
+  .title {
+    font-size: 60px;
+  }
+  .grid1,
+  .grid2 {
+    width: 80%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0;
+  }
+  .grid2 .profile-img {
+    mask-image: url(assets/images/shield-lg.svg);
+    min-height: 280px;
+  }
+  .grid3 {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .grid1 {
+    width: 70vw;
+  }
+  .grid2 {
+    width: 90%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .grid3 {
+    width: 100%;
+  }
+}
