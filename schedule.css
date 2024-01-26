@@ -21,6 +21,7 @@
 	text-align: center;
 	padding: 20px 0px;
 	color: red;
+	font-family: 'Rubik Maps', system-ui;
   }
 
  .starting{
@@ -41,18 +42,18 @@
 
   .start ul li:nth-child(1) {
 	background: url(./assets/pline-2.png) 65px top no-repeat !important;
-	/* padding-top: 80px !important; */
+	padding-top: 80px !important;
   }
   
   .start ul li:nth-child(odd) {
 	background: url(./assets/pline-2.png) 65px top no-repeat;
-	/* padding-top: 30px !important; */
+	padding-top: 100px !important;
 	padding-left: 390px !important;
   }
   
   .start ul li:nth-child(even) {
 	background: url(./assets/Vector\ 3\ \(1\).png) 65px top no-repeat;
-	/* padding-top: 100px !important; */
+	padding-top: 100px !important;
   }
   
   .start ul li .icon {
@@ -77,6 +78,11 @@
   .start ul li .media-body h4{
 	font-weight: bold;
 	font-size: 2.5rem;
+  }
+
+  .start ul li .media-body p{
+	font-weight: bold;
+	font-size: 1rem;
   }
   
   
@@ -103,7 +109,7 @@
   }
 
   /* .skull{
-	background: url(./assets/skull103-r.png) no-repeat;
+	background: url(./assets/skull102-re.png) no-repeat;
 	height: 200px;
 	width: 200px;
 	background-size: contain;
@@ -143,24 +149,14 @@
 	animation: rotate360 5s infinite linear;
 } */
 
-@keyframes floatLeftRight {
-	0%, 100% {
-	  transform: translateX(0);
-	}
-	50% {
-	  transform: translateX(100px);
-	}
-  }
-
 .mountain1{
 	background: url(./assets/mountain-removebg.png) no-repeat;
 	background-size: contain;
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	right: 278px;
+	right: 238px;
     top: 858px;
-	animation: floatLeftRight 2s infinite;
 }
 
 .mountain2{
@@ -169,9 +165,8 @@
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	right: 500px;
+	right: 400px;
 	top: 858px;
-	animation: floatLeftRight 2s infinite;
 }
 
 .mountain3{
@@ -180,9 +175,8 @@
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	right: 550px;
+	right: 400px;
 	top: 900px;
-	animation: floatLeftRight 2s infinite;
 }
 
 .mountain4{
@@ -191,9 +185,8 @@
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	right: 295px;
+	right: 238px;
 	top: 900px;
-	animation: floatLeftRight 2s infinite;
 }
 
   /* Respnsive */
@@ -224,3 +217,17 @@
 		display: none;
 	}
   }
+
+
+/* Add pop-up effect to media-body */
+.media-body {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Apply the pop-up effect on scroll */
+.media-body.pop-up {
+    opacity: 1;
+    transform: translateY(0);
+}
