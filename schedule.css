@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -21,7 +23,7 @@
 	text-align: center;
 	padding: 20px 0px;
 	color: red;
-	font-family: 'Rubik Maps', system-ui;
+	font-family: 'Holtwood One SC';
   }
 
  .starting{
@@ -138,16 +140,6 @@
   }
 
   /* animations */
-/* .compass{
-	background: url(./assets/compass-removebg.png);
-	background-size: cover;
-	width: 450px;
-	height: 450px;
-	position: absolute;
-	left: 0;
-	top: 300px;
-	animation: rotate360 5s infinite linear;
-} */
 
 .mountain1{
 	background: url(./assets/mountain-removebg.png) no-repeat;
@@ -231,3 +223,4 @@
     opacity: 1;
     transform: translateY(0);
 }
+
