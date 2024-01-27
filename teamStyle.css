@@ -25,14 +25,41 @@
     padding: 10px;
     border-radius: 9px;
     font-family: "Arial Black", Gadget, sans-serif;
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(90deg, rgba(174,139,161,1) 0%, rgba(242,236,182,1) 100%);
         -webkit-text-fill-color: transparent; 
         -webkit-background-clip: text;
         font-weight: 900;
 }
-.overlayText2 {
+.overlayText {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     text-align: left;
-    top: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding-left: 22.5px;
+}
+
+.overlayText2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: 10px;
+    padding-left: 22.5px;
 }
 @media screen and (max-width: 760px) {
     body {
