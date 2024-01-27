@@ -107,7 +107,7 @@
     }
     .rightHead img {
         width: 75vw;
-        border-radius: 11px;
+        border-radius: 12px!important;
     }
     .mainPeople {
         padding-top: 20px;
@@ -125,7 +125,6 @@
 
     .rightHead img {
         width: 75vw;
-        border-radius: 9px;
         margin-top: 10px; 
         filter: brightness(50%);
         margin-right: -50px;
