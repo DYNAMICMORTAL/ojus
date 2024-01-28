@@ -263,21 +263,38 @@ position: relative;
 }
 .socials {
     position: absolute;
-    top: 35%;
+    top: 30%;
     right: 0;
+    padding-right: 5px!important;
+    padding: 18px;
     margin-top: 20px;
     z-index: 5;
-    margin-right: 20px;
+    background: #000000;
+    border: #fff groove 2px;
+    border-radius: 40px 0 0 40px;
+    transition: ease-in-out 0.3s;
+}
+
+.socials :hover{
+    scale: (1.5);
+    transition: ease-in-out 0.3s;
 }
 
 .socials a {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #ffffff; /* Set the color of the icons */
     font-size: 33.5px;
+    transition: ease-in-out 0.3s;
+}
+
+.socials :last-child{
+    margin-bottom: 0;
 }
 
 /* Customize the icon styles as needed */
 .socials a:hover {
-    color: #ffcc00; /* Change color on hover if desired */
+    color: #ffcc00;
+    transform: scale(1.3);
+    transition: ease-in-out 0.3s;
 }
