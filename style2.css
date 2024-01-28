@@ -104,7 +104,7 @@ header a, a:visited {
 
 .clouds{
     background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-    z-index:3;
+    z-index:-1;
     opacity: 0.4;
 
   -moz-animation:move-clouds-back 200s linear infinite;
@@ -122,6 +122,8 @@ header a, a:visited {
     display: flex;
     width: 100vw;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .logos .ROE {
     color: #fff;
@@ -239,12 +241,9 @@ header a, a:visited {
 }
 
 .event-timer{
-display: inline-flex;
-border-radius: 50px;
-position: relative;
-/* box-shadow: 5px 5px 10px 0px rgba(255,255,255,0.75);
--webkit-box-shadow: 5px 5px 10px 0px rgba(255,255,255,0.75);
--moz-box-shadow: 5px 5px 10px 0px rgba(255,255,255,0.75); */
+    display: inline-flex;
+    border-radius: 50px;
+    position: relative;
 }
 .event-timer div{
     flex-basis: 100px;
@@ -283,7 +282,7 @@ position: relative;
 .socials a {
     display: block;
     margin-bottom: 15px;
-    color: #ffffff; /* Set the color of the icons */
+    color: #ffffff;
     font-size: 33.5px;
     transition: ease-in-out 0.3s;
 }
@@ -291,9 +290,26 @@ position: relative;
 .socials :last-child{
     margin-bottom: 0;
 }
-
-/* Customize the icon styles as needed */
 .socials a:hover {
+    color: #ffcc00;
+    transform: scale(1.3);
+    transition: ease-in-out 0.3s;
+}
+.menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menuList li a {
+    margin-right: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "RomansStory",serif;
+    /* font-weight: 900; */
+}
+.menuList li a:hover {
     color: #ffcc00;
     transform: scale(1.3);
     transition: ease-in-out 0.3s;
