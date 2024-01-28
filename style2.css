@@ -105,6 +105,7 @@ header a, a:visited {
 .clouds{
     background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
     z-index:3;
+    opacity: 0.4;
 
   -moz-animation:move-clouds-back 200s linear infinite;
   -ms-animation:move-clouds-back 200s linear infinite;
@@ -138,23 +139,16 @@ header a, a:visited {
     text-decoration: none;
 }
 
-.ojus-logo{
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    right: 0;
-    margin-top: -5vh;
-    margin-right: 0.15em;
-    width: 20vh;
-}
 
 .culturals-logo{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 25vh;
-    margin-right: 4vw;
     height: 5vh;
+    position: absolute;
+    left: 35%;
 }
 
 .themeText h1{
@@ -169,7 +163,7 @@ header a, a:visited {
     animation: animate 3s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    margin-top: 30vw;
+    /* margin-top: 30vw; */
   }
   
   @keyframes animate {
@@ -182,12 +176,12 @@ header a, a:visited {
   }
 
 .cultlogo{
-    position: absolute;
-    height: 40vh;
+    height: 50vh;
     z-index: 50;
+    margin-top: 150px;
 }
 
-.event-timer{
+/* .event-timer{
     position: relative;
     z-index: 5;
     display: flex;
@@ -196,7 +190,8 @@ header a, a:visited {
     background: #c31432;  
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432); 
-            margin-top: 80vh;
+    margin-bottom: -200px;
+    margin-top: 20px;
     color: aqua;
     border-radius: 15px;
     p{
@@ -205,4 +200,64 @@ header a, a:visited {
     div{
         margin: 10px;
     }
+} */
+.columnContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.event-timer{
+    /* background: #c31432;   */
+/* background: -webkit-linear-gradient(to right, #240b36, #c31432); */
+/* background: linear-gradient(to right, #240b36, #c31432);  */
+    margin-top: 20px;
+    display: flex;
+    font-size: large;
+    border-radius: 50px;
+    transform: scale(1.4);
+}
+.event-timer div{
+    width: 95px;
+    padding: 15px;
+    color: #122e22;
+    flex-basis: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-right: #465e64 solid 1px;
+    box-shadow: #0077b5;
+}
+.event-timer div:nth-child(4n){
+    border-right: none !important;
+}
+.event-timer div p{
+    font-size: 2.3rem;
+}
+.event-timer div span{
+    font-size: .9rem;
+}
+
+.event-timer{
+display: inline-flex;
+border-radius: 50px;
+position: relative;
+/* box-shadow: 5px 5px 10px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 5px 5px 10px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 5px 5px 10px 0px rgba(255,255,255,0.75); */
+}
+.event-timer div{
+    flex-basis: 100px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1px;
+    width: 80px;
+}
+.event-timer div span {
+    font-size: 8px;
+    font-family: "RomansStory",serif;
+}
+.event-timer div p {
+    font-size: 30px;
+    font-family: "RomansStory",serif;
 }
