@@ -261,3 +261,23 @@ position: relative;
     font-size: 30px;
     font-family: "RomansStory",serif;
 }
+.socials {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    margin-top: 20px;
+    z-index: 5;
+    margin-right: 20px;
+}
+
+.socials a {
+    display: block;
+    margin-bottom: 20px;
+    color: #ffffff; /* Set the color of the icons */
+    font-size: 33.5px;
+}
+
+/* Customize the icon styles as needed */
+.socials a:hover {
+    color: #ffcc00; /* Change color on hover if desired */
+}
