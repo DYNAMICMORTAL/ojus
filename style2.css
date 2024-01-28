@@ -24,6 +24,35 @@ header {
     position:relative;
     z-index:5;
 }
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.preloader {
+    transition: opacity 2s ease-out;
+    opacity: 1;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    pointer-events: none; /* Make sure it's not clickable while hidden */
+}
+.preloader video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
 h2{
     margin-top: 30px;
     text-align: center;
