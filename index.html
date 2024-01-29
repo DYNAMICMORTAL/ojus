@@ -168,6 +168,13 @@
         <h5>made with ❤️ by <a href="#">Ojus Webdev</a></h5>
     </section>
 <script>
+
+        if (window.innerWidth <= 767) {
+            window.location.href = 'index.html';
+        } else {
+            window.location.href = 'index2.html';
+        }
+
     document.addEventListener('scroll', function() {
       const scrollingContainer = document.getElementById('scrollingContainer');
       const scrollingText = document.getElementById('scrollingText');
