@@ -169,11 +169,13 @@
     </section>
 <script>
 
-        if (window.innerWidth <= 767) {
+        if (window.matchMedia('(max-width: 431px)').matches) {
+            window.location.href = 'index.html';
+        } else if (window.matchMedia('(max-width: 767px)').matches) {
             window.location.href = 'index.html';
         } else {
             window.location.href = 'index2.html';
-        } 
+        }
 
     document.addEventListener('scroll', function() {
       const scrollingContainer = document.getElementById('scrollingContainer');
