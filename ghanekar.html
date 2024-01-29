@@ -95,6 +95,13 @@
       </section>
     </div>
     <script>
+
+        document.addEventListener('contextmenu', function (e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+
       let slideIndex = 0;
       let slides = document.getElementsByClassName("myslides");
       let dots = document.getElementsByClassName("dot");

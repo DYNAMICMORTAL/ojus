@@ -93,6 +93,12 @@
         </div>
     </section>
     <script>
+        // document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('contextmenu', function (e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
         function toggleAboutOjus() {
             var aboutOjus = document.getElementById("aboutOjus");
             var isVisible = aboutOjus.style.opacity === "1";
