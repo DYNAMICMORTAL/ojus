@@ -169,10 +169,9 @@
     </section>
 <script>
 
-        if (window.matchMedia('(max-width: 431px)').matches) {
-            window.location.href = 'index.html';
-        } else if (window.matchMedia('(max-width: 767px)').matches) {
-            window.location.href = 'index.html';
+        if (window.innerWidth <= 767) {
+            // window.location.href = 'index.html';
+            console.log('mobile');
         } else {
             window.location.href = 'index2.html';
         }
