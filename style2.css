@@ -319,17 +319,16 @@ header a, a:visited {
     font-weight: 400;
     position: absolute;
     top: 30%;
-    /* right: 0; */
     padding-right: 5px!important;
     padding: 18px;
     margin-top: 20px;
     z-index: 5;
-    /* border-radius: 40px 0 0 40px; */
     transition: ease-in-out 0.3s;
     user-select: none;
 }
 .about:hover {
     cursor: pointer;
+    /* color: red!important; */
 }
 #aboutOjus {
     display: none;
