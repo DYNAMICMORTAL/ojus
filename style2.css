@@ -406,7 +406,7 @@ header a, a:visited {
     height: 50px;
     border-radius: 50%;
     -webkit-backface-visibility: hidden;
-    animation: wave-animate 2s infinite ease-out; /* Adjusted animation duration */
+    animation: wave-animate 2s infinite ease-out;
   }
   
   @keyframes wave-animate {
@@ -419,22 +419,5 @@ header a, a:visited {
       transform: scale(3);
       opacity: 0;
       transform-origin: center;
-    }
-  }
-  @keyframes color-loop {
-    0% {
-      background: #2CAB5B;
-    }
-    25% {
-      background: #FABC03;
-    }
-    50% {
-      background: #ED4B40;
-    }
-    75% {
-      background: #4286F3;
-    }
-    100% {
-      background: #2CAB5B;
     }
   }
