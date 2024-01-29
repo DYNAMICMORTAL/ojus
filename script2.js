@@ -17,8 +17,9 @@ var x = setInterval(function() {
     threshold: 0.5, 
   };
 
-//   document.addEventListener("DOMContentLoaded", function() {
-//     setTimeout(function() {
-//         document.querySelector('.preloader').style.display = 'none';
-//     }, 13000); // 8000 milliseconds (8 seconds)
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+      document.querySelector('.preloader').style.display = 'none';
+      document.querySelector('#home-section').style.display = 'block';
+  }, 4000);
+});
