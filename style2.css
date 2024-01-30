@@ -175,7 +175,7 @@ header a, a:visited {
     margin-top: 25vh;
     height: 5vh;
     position: absolute;
-    left: 35%;
+    left: 31%;
 }
 
 .themeText h1{
@@ -314,6 +314,9 @@ header a, a:visited {
     transform: scale(1.3);
     transition: ease-in-out 0.3s;
 }
+
+
+
 .about h3 {
     color: #fff;
     font-family: "RomansStory",serif;

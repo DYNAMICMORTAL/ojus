@@ -800,13 +800,10 @@ font-size: 1.5em;
         color: #fff;
         background: #000;
     }
-    .scrolling-text {
-        font-size: 1.5em;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        margin-left: 4em;
-        font-weight: 700;
-        user-select: none;
+    .scrolling-container {
+        min-height: 8vh;
+        background: rgb(231,228,220);
+background: linear-gradient(0deg, rgba(231,228,220,1) 19%, rgba(147,131,143,1) 77%);
     }
     .scrolling-text span {
         color: #00ffae;
