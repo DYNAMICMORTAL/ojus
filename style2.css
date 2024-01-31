@@ -112,12 +112,12 @@ header a, a:visited {
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:#000 url(https://res.cloudinary.com/ds2uw5gcw/image/upload/v1706684409/stars_klysdk.png) repeat top center;
   z-index:-2;
 }
 
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  background:transparent url(https://res.cloudinary.com/ds2uw5gcw/image/upload/v1706684407/twinkling_gree4e.png) repeat top center;
   z-index:-1;
 
   -moz-animation:move-twink-back 200s linear infinite;
@@ -128,7 +128,7 @@ header a, a:visited {
 }
 
 .clouds{
-    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    background:transparent url(https://res.cloudinary.com/ds2uw5gcw/image/upload/v1706684410/clouds3_sxlgcc.png) repeat top center;
     z-index:-1;
     opacity: 0.4;
 
