@@ -175,21 +175,22 @@ header a, a:visited {
     margin-top: 25vh;
     height: 5vh;
     position: absolute;
-    left: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .themeText h1{
-    position: relative;
-    font-family: "RomansStory",serif;
-    font-size: 3em;
-    overflow: hidden;
-    font-weight: 400;
-    background: linear-gradient(90deg, #000, #e8c371, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 7s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+        position: relative;
+        font-family: "RomansStory",serif;
+        font-size: 3em;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-clip: text;
+        font-size: 2em;
+        text-align: center;
+        background-image: url(assets/images/goldgif.gif);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     /* margin-top: 30vw; */
   }
   
