@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "RomansStory";
+    src: url("assets/fonts/RomansStory.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "RomansStory", sans-serif;
+}
+.firstSection {
+    background: #000000;
+    height: 100vh;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar h1 {
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+    font-size: 5em;
+    padding-top: 0.15em;
+    padding-left: 0.25em;
+}
