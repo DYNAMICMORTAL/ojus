@@ -36,18 +36,77 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
 }
-.fab {
-  position: absolute;
-  bottom: 1.2rem;
-  right: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background-color: white;
+/* .fab {
+  position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #2ba5f6, #69007f, #fc0987);
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 1.25em;
+  margin-top: 5vh;
 }
+.fab:hover::before {
+    opacity: 0.7;
+  }
+.fab::before{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #272727;
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+.fab::after{
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(45deg, #2ba5f6, #69007f, #fc0987);
+    border-radius: 9px;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(20px);
+}
+
+.fab:hover:after {
+    opacity: 1;
+  }
+
 .fab a {
   text-decoration: none;
   color: black;
   border: none;
+} */
+
+.bookaseat {
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 5vh;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease;
+  }
+}
+.bookaseat:hover {
+  color: #001F3F;
+  background-color: #fff;
+  a{
+    color: #001F3F;
+  
+  }
 }
 .title {
   font-size: 5rem;
@@ -150,13 +209,35 @@ video {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   gap: 1rem;
+  color: #fff;
 }
 .input-box input {
-  padding: 3px 5px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  width: 100%;
+  border: white 0.5px solid;
+  border-radius: 30px;  
+  background: transparent;
+  padding: 6px 6px;
 }
+
+.input-box select{
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  width: 100%;
+  border: white 0.5px solid;
+  border-radius: 30px;  
+  background: transparent;
+  padding: 6px 6px;
+}
+
+.input-box input::placeholder {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 426px) {
   .title {
     font-size: 3rem;
