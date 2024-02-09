@@ -33,13 +33,39 @@ body {
 }
 /* .hero {
 } */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .hero-content h1{
     font-size: 15em;
     font-family: 'Fjalla One', sans-serif;
     font-weight: 900;
     letter-spacing: 10px;
     text-align: center;
+    /* color: red; */
+    position: absolute;
+    top: 10%;
+    /* left: 50%; */
 }
 .hero-content p{
     font-weight: 200;
+}
+/* .hero-content {
+    display: none;
+} */
+.shower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.showerImage {
+    margin-top: 5em;
+    max-width: 90vw;
+    align-items: center;
+    border-radius: 75px;
+    filter: brightness(0.5);
 }
