@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     meetJamsutkars.forEach(meetJamsutkar => {
         meetJamsutkar.style.display = 'none';
     });
-    document.getElementById('3').style.display = 'block';
+    
+    document.getElementById('0').style.display = 'block'; // Set the default display to 'block' for element with id='0'
 
     container.addEventListener('mouseover', (event) => {
         const target = event.target;
@@ -38,6 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         meetJamsutkars.forEach(meetJamsutkar => {
             meetJamsutkar.style.display = 'none';
         });
-        document.getElementById('3').style.display = 'block';
+        document.getElementById('0').style.display = 'block'; // Set the default display to 'block' on mouse leave
     });
 });

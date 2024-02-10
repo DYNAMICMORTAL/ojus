@@ -12,7 +12,7 @@ body {
   background-color: #252525;
   overflow-x: hidden;
 }
-section {
+.hero ,.first {
   min-height: 100vh;
   scroll-snap-align: center;
 }
@@ -307,6 +307,21 @@ video {
     transform: scale(1.2);
     width: 50vw;
   }
+
+  .madeWithLove {
+    background: #000;
+    color: #707070;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 10px;
+}
+.madeWithLove h5 a {
+    text-decoration: none;
+    color: #fff;
+}
 }
 
 
@@ -336,4 +351,20 @@ video {
   .active {
     width: 1.5rem;
   }
+}
+
+.madeWithLove {
+  background: #000;
+  min-height: fit-content!important;
+  color: #707070;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  font-size: 1em;
+}
+.madeWithLove h5 a {
+  text-decoration: none;
+  color: #fff;
 }

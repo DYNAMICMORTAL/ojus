@@ -17,9 +17,34 @@ var x = setInterval(function() {
     threshold: 0.5, 
   };
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-      document.querySelector('.preloader').style.display = 'none';
-      document.querySelector('#home-section').style.display = 'block';
-  }, 4000);
-});
+  document.addEventListener("DOMContentLoaded", function () {
+    fadeOutAndHide('.preloader', 3500); // 5000 milliseconds (5 seconds) duration
+    showElement('#home-section');
+  });
+  
+  function fadeOutAndHide(selector, duration) {
+    const element = document.querySelector(selector);
+    let opacity = 1;
+    const interval = 50; // Interval for the opacity change (milliseconds)
+    const steps = duration / interval;
+    const deltaOpacity = opacity / steps;
+  
+    const fadeEffect = setInterval(function () {
+      if (opacity <= 0) {
+        clearInterval(fadeEffect);
+        hideElement(selector);
+      } else {
+        element.style.opacity = opacity;
+        opacity -= deltaOpacity;
+      }
+    }, interval);
+  }
+  
+  function hideElement(selector) {
+    document.querySelector(selector).style.display = 'none';
+  }
+  
+  function showElement(selector) {
+    document.querySelector(selector).style.display = 'block';
+  }
+  
