@@ -13,6 +13,10 @@
     font-weight: normal;
     font-style: normal;
 }
+.ojusHeader a {
+    text-decoration: none;
+    color: #fff;
+}
 .overlayText {
     position: absolute;
     top: 0;
