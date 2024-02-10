@@ -38,7 +38,7 @@ body {
     font-size: 5em;
     padding-top: 0.15em;
     padding-left: 0.25em;
-    /* position: fixed; */
+    position: fixed;
     z-index: 100;
 }
 .redSection {
