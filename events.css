@@ -71,6 +71,32 @@ body {
 .thirdRedText {
     font-weight: 100;
 }
+.animate-from-above {
+    animation: slideFromAbove 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromAbove {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.redSection .secondRedText,
+.redSection .thirdRedText {
+    opacity: 0;
+    transition: opacity 1s ease-in-out 2s;
+}
+
+.redSection.animate-from-above .secondRedText,
+.redSection.animate-from-above .thirdRedText {
+    opacity: 1;
+}
 /* .hero {
 } */
 .hero-content {
