@@ -258,6 +258,7 @@ body {
 	transition: all 400ms;
     margin: 10vh;
     width: 60%;
+    
 }
 
 .container:hover .box {

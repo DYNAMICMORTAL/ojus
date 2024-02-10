@@ -25,7 +25,38 @@
         <div class="overlay">
           <div class="title">Kashinath Ghanekar</div>
           <div class="subtitle">Natyagruh</div>
-          <button class="bookaseat"><a href="#ticket">BOOK A SEAT</a></button>
+          <button class="bookaseat" onclick="toggleSignupForm()"><a href="">BOOK A SEAT</a></button>
+        </div>
+        <div id="signupform" class="signup-closed">
+          <button class="close-btn" onclick="toggleSignupForm()">X</button>
+        <div class="form-title">Book a Seat</div>
+          <form action="">
+            <div class="input-box">
+              <input
+                type="text"
+                id="pname1"
+                name="pname"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <input type="text" id="contact" name="contact" pattern="[0-9]{10}" inputmode="tel" placeholder="Mobile Number" required/>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Department" required />
+            </div>
+            <div class="input-box">
+                <select required title="Year">
+                <option value="" disabled selected>Select a Year</option>
+                <option value="FE">FE</option>
+                <option value="SE">SE</option>
+                <option value="TE">TE</option>
+                <option value="BE">BE</option>
+                </select>
+            </div>
+            <button class="signupbtn" type="submit">PROCEED</button>
+          </form>
         </div>
       </section>
       <section class="first">
@@ -71,7 +102,7 @@
           </div>
         </div>
       </section>
-      <section id="ticket" class="ticket-form">
+      <!-- <section id="ticket" class="ticket-form">
         <div class="overlay full">
           <div class="form-title">Book a Seat</div>
           <form action="">
@@ -101,7 +132,7 @@
             </div>
           </form>
         </div>
-      </section>
+      </section> -->
     </div>
     <script src="consolejs.js"></script>
     <script>
@@ -142,24 +173,30 @@
         timeout = setTimeout(showSlides, 2000);
       }
 
-      document.addEventListener('DOMContentLoaded', function () {
-    function scrollToSection(sectionId) {
-        const targetSection = document.querySelector(sectionId);
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    }
+//       document.addEventListener('DOMContentLoaded', function () {
+//     function scrollToSection(sectionId) {
+//         const targetSection = document.querySelector(sectionId);
+//         if (targetSection) {
+//             window.scrollTo({
+//                 top: targetSection.offsetTop,
+//                 behavior: 'smooth'
+//             });
+//         }
+//     }
 
-    const bookASeatButton = document.querySelector('.bookaseat');
-    if (bookASeatButton) {
-        bookASeatButton.addEventListener('click', function () {
-            scrollToSection('#ticket');
-        });
-    }
-});
+//     const bookASeatButton = document.querySelector('.bookaseat');
+//     if (bookASeatButton) {
+//         bookASeatButton.addEventListener('click', function () {
+//             scrollToSection('#ticket');
+//         });
+//     }
+// });
+
+function toggleSignupForm() {
+  event.preventDefault();
+    const signupForm = document.getElementById('signupform');
+    signupForm.classList.toggle('signup-closed');
+}
 
     </script>
   </body>
