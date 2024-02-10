@@ -1,0 +1,226 @@
+  @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "RomansStory";
+    src: url("assets/fonts/RomansStory.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body{
+	background: url(./assets/bggg.png) no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	height: max-content;
+	width: 100%;
+  }
+
+  h1{
+	font-size:4rem;
+	text-align: center;
+	padding: 20px 0px;
+	color: red;
+	font-family: 'Holtwood One SC';
+  }
+
+ .starting{
+	width: 20%;
+ }
+
+  .home {
+	/* background: url(./assets/background.jpg) no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center; */
+	padding: 200px 500px;
+  }
+
+  li{
+	list-style: none;
+  }
+
+  .start ul li:nth-child(1) {
+	background: url(./assets/pline-2.png) 65px top no-repeat !important;
+	padding-top: 80px !important;
+  }
+  
+  .start ul li:nth-child(odd) {
+	background: url(./assets/pline-2.png) 65px top no-repeat;
+	padding-top: 100px !important;
+	padding-left: 390px !important;
+  }
+  
+  .start ul li:nth-child(even) {
+	background: url(./assets/Vector\ 3\ \(1\).png) 65px top no-repeat;
+	padding-top: 100px !important;
+  }
+  
+  .start ul li .icon {
+	margin: 30px 0;
+	display: inline-block;
+	height: 124px;
+	margin-right: 30px;
+	width: 124px;
+	text-align: center;
+  }
+  
+  .start ul li h4 {
+	color: black;
+	text-transform: uppercase;
+	font-size: 30px;
+  }
+  
+  .start ul li .media-body {
+	max-width: 390px;
+  }
+
+  .start ul li .media-body h4{
+	font-weight: bold;
+	font-size: 2.5rem;
+  }
+
+  .start ul li .media-body p{
+	font-weight: bold;
+	font-size: 1rem;
+  }
+  
+  
+  .start ul li p {
+	color: black;
+  }
+  
+  .home .process:after {
+	background: url(./assets/process-top.png) center top no-repeat;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+  }
+  
+  .home .process:before {
+	position: absolute;
+	top: 0;
+	content: "";
+	width: 100%;
+	left: 0px;
+	background: white;
+  }
+
+  /* .skull{
+	background: url(./assets/skull102-re.png) no-repeat;
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	left: 7%;
+	bottom: -280px;
+	position: absolute;
+  } */
+
+  .destination{
+	background: url(./assets/cross-removebg.png) no-repeat;
+	height: 100px;
+	width: 100px;
+	background-size: contain;
+	left: 57%;
+	bottom: -800px;
+	position: absolute;
+  }
+  
+  .treasure{
+	background: url(./assets/treasure.png) no-repeat;
+	background-size: contain;
+	height: 200px;
+	visibility: hidden;
+	width: 200px;
+	margin-top: 50px;
+  }
+
+  /* animations */
+
+.mountain1{
+	background: url(./assets/mountain-removebg.png) no-repeat;
+	background-size: contain;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	right: 238px;
+    top: 858px;
+}
+
+.mountain2{
+	background: url(./assets/mountain-removebg.png) no-repeat;
+	background-size: contain;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	right: 400px;
+	top: 858px;
+}
+
+.mountain3{
+	background: url(./assets/mountain-removebg.png) no-repeat;
+	background-size: contain;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	right: 400px;
+	top: 900px;
+}
+
+.mountain4{
+	background: url(./assets/mountain-removebg.png) no-repeat;
+	background-size: contain;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	right: 238px;
+	top: 900px;
+}
+
+  /* Respnsive */
+
+  @media screen and (max-width: 768px) {
+	body{
+		height: max-content;
+	}
+
+	.home{
+		padding: 100px 150px;
+	}
+
+	.start ul li .media-body {
+		max-width: 400px;
+		font-size: 1rem;
+	  }
+	
+
+	.start ul li:nth-child(odd) {
+		background: url(./assets/pline-2.png) 100px top no-repeat;
+		/* padding-top: 30px !important; */
+		padding-left: 360px !important;
+	  }
+	  
+  /* animations */
+	.compass,.mountain1,.mountain2,.mountain3,.mountain4,.skull{
+		display: none;
+	}
+  }
+
+
+/* Add pop-up effect to media-body */
+.media-body {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Apply the pop-up effect on scroll */
+.media-body.pop-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
