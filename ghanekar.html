@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <meta property="og:title" content="OJUS 2024">
+<meta property="og:site_name" content="OJUS-Chronicles Of Ages">
+<meta property="og:url" content="https://dynamicmortal.github.io/ojus/"">
+<meta property="og:description" content="OJUS IS BACK!!!"">
+<meta property="og:type" content="">
+<meta property="og:image" content="https://res.cloudinary.com/dsduxocoj/image/upload/v1705957565/ogimage_qgeata.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
     <title>Ghanekar</title>
     <link rel="stylesheet" href="ghanekar.css" />
   </head>
@@ -12,9 +25,7 @@
         <div class="overlay">
           <div class="title">Kashinath Ghanekar</div>
           <div class="subtitle">Natyagruh</div>
-          <div class="fab">
-            <a href="#ticket">Book a Seat</a>
-          </div>
+          <button class="bookaseat"><a href="#ticket">BOOK A SEAT</a></button>
         </div>
       </section>
       <section class="first">
@@ -74,21 +85,19 @@
               />
             </div>
             <div class="input-box">
-              <input
-                type="text"
-                id="contact"
-                name="contact"
-                pattern="[0-9]{10}"
-                inputmode="tel"
-                placeholder="Mobile Number"
-                required
-              />
+              <input type="text" id="contact" name="contact" pattern="[0-9]{10}" inputmode="tel" placeholder="Mobile Number" required/>
             </div>
             <div class="input-box">
               <input type="text" placeholder="Department" required />
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Year" required />
+                <select required title="Year">
+                <option value="" disabled selected>Select a Year</option>
+                <option value="FE">FE</option>
+                <option value="SE">SE</option>
+                <option value="TE">TE</option>
+                <option value="BE">BE</option>
+              </select>
             </div>
           </form>
         </div>
@@ -132,6 +141,26 @@
         showSlide(slideIndex);
         timeout = setTimeout(showSlides, 2000);
       }
+
+      document.addEventListener('DOMContentLoaded', function () {
+    function scrollToSection(sectionId) {
+        const targetSection = document.querySelector(sectionId);
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    const bookASeatButton = document.querySelector('.bookaseat');
+    if (bookASeatButton) {
+        bookASeatButton.addEventListener('click', function () {
+            scrollToSection('#ticket');
+        });
+    }
+});
+
     </script>
   </body>
 </html>
