@@ -170,3 +170,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .daysContainerGlow {
     opacity: 1;
 }
+.daysContainer2 {
+    top: 200%;
+    /* margin-bottom: 2em; */
+}
+.daysContainer3 {
+    padding-top: 2em;
+    top: 300%;
+}
+.daysContainer4 {
+    padding-top: 4em;
+    top: 400%;
+}
