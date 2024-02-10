@@ -15,6 +15,7 @@
 body {
     font-family: "RomansStory", sans-serif;
     color: #fff;
+    background: #000;
 }
 .firstSection {
     background: #000000;
@@ -110,9 +111,13 @@ body {
     filter: brightness(0.5);
 }
 .daysContainer {
+    position: absolute;
+    top: 95%;
+    left: 4.5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
 }
 .day1 {
     display: flex;
@@ -120,9 +125,15 @@ body {
     justify-content: space-around;
     align-items: center;
     background: red;
+    background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(7.1px);
+backdrop-filter: blur(7.1px);
+border: 1px solid rgba(255, 255, 255, 0.3); 
     border-radius: 30px;
     width: 90vw;
-    position: relative;
+    /* position: relative; */
 } 
 .leftTexts {
     display: flex;
@@ -131,14 +142,23 @@ body {
     align-items: end;
     position: absolute;
     bottom: 0;
+    padding-bottom: 2em;
 }
 .leftText {
     font-family: "Fjalla One", sans-serif;
-    font-size: 9em;
+    font-size: 11em;
     font-weight: 900;
+}
+.leftText2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 .rightDay {
     font-family: "Roboto Condensed", sans-serif;
+    padding-top: 2em;
+    margin-right: -7em;
+    padding-bottom: 2em;
 }
 .rightScroller {
     list-style-type: none;
@@ -146,4 +166,7 @@ body {
 .rightScroller li {
     font-size: 4.5em;
     border-bottom: 1px solid #fff;
+}
+.daysContainerGlow {
+    opacity: 1;
 }
