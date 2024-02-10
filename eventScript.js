@@ -14,3 +14,15 @@ window.addEventListener('scroll', function() {
     
     lastScrollY = scrollY;
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const heroContent = document.querySelector('.hero-content');
+    heroContent.classList.remove('animate-from-below');
+    setTimeout(() => {
+        heroContent.classList.add('animate-from-below');
+    }, 0);
+});
