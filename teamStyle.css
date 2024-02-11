@@ -72,6 +72,7 @@
     padding-left: 22.5px;
 }
 body {
+    overflow-x: hidden;
     font-family: "RomansStory", serif;
     /* background: linear-gradient(90deg, rgba(249,248,113,1) 0%, rgba(255,199,95,1) 20%, rgba(255,150,113,1) 40%, rgba(255,111,145,1) 60%, rgba(255,111,145,1) 80%, rgba(132,94,194,1) 100%) no-repeat; */
     background: #000000;  /* fallback for old browsers */
@@ -95,6 +96,9 @@ body {
     padding-left: 0.25em;
     padding-top: 0.15em;
     font-weight: 400;
+}
+#roeText:hover {
+    color: #fff;
 }
 .mainPeople {
     background: #201d1d;
@@ -338,27 +342,25 @@ body {
     font-size: 6em;
     font-weight: 900;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 8px;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #4CAF50;
+.volunteerContainer {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
 }
