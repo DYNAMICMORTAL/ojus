@@ -312,7 +312,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .container:hover .box-1 ~ .MeetJamsutkar,
@@ -375,4 +375,33 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+}
+.teamList {
+    font-family: "Fjalla One", sans-serif;
+    list-style: none;
+    width: 35vw;
+    font-size: 2em;
+}
+.teamMembers {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #fff;
+}
+.teamMembers:nth-child(1) {
+    border-top: 1px solid #fff;
+}
+.coText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.age {
+    font-size: 4em;
+    opacity: 0.5;
+    margin-right: 0.5em;
+}
+.age2 {
+    margin-right: 0em!important;
 }
