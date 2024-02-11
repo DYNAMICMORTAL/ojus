@@ -195,6 +195,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     list-style-type: none;
 }
 .rightScroller li {
+    /* font-family: "RomansStory", sans-serif; */
     font-size: 4.5em;
     border-bottom: 1px solid #fff;
 }
@@ -243,4 +244,31 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         opacity: 1;
         /* top: -50%; */
     }
+}
+.menu {
+    margin-left: 2.25em;
+    position: absolute;
+    top: 40%;
+}
+.stickedMenu {
+    list-style-type: none;
+    position: fixed;
+    z-index: 100;
+    /* color: #fff; */
+}
+.menu a  {
+    color: #fff;
+    text-decoration: none;
+}
+.menuItems {
+    font-size: 1.7em;
+    margin-bottom: 0.25em;
+    opacity: 0.35;
+    transition: 0.4s all ease-in-out;
+}
+.menuItems:hover {
+    opacity: 1;
+    /* text-decoration: underline; */
+    /* text-underline-offset: 0.15em; */
+    list-style-type: armenian;
 }
