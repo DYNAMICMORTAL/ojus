@@ -338,9 +338,13 @@ body {
 }
 
 .default h2{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 6em;
-    font-weight: 900;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: "RomansStory", serif;
+    font-size: 5em;
+    /* font-weight: 900; */
+    margin-top: -0.45em;
+    padding-bottom: 0.2em;
+    font-weight: 100;
 }
 .volunteerContainer {
     table {
