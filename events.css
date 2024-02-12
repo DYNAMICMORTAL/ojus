@@ -350,14 +350,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     .leftText2 {
         font-size: 1em;
     }
-    .daysContainer1 {
-        top: 48%!important;
+    .daysContainer {
+        position: relative!important;
+        left: 0!important;
     }
-    /* body {
-        overflow-y: hidden;
-    } */
-    /* .daysContainer2 {
-        position: inherit!important;
-        top: unset!important;
-    } */
+    .daysContainer1, .daysContainer2, .daysContainer3, .daysContainer4 {
+        padding-top: 1em!important;
+        padding-bottom: 0!important;
+    }
+    #scrollRef {
+        display: none;
+    }
+    .daysContainer4 {
+        margin-bottom: 1em;
+    }
 }
