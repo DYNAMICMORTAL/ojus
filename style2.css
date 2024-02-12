@@ -188,7 +188,7 @@ header a, a:visited {
         background-repeat: no-repeat;
         background-size: 100%;
         background-clip: text;
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
         background-image: url(assets/images/goldgif.gif);
         -webkit-background-clip: text;
@@ -378,6 +378,7 @@ header a, a:visited {
 }
 .about:hover {
     cursor: pointer;
+    /* color: yellow; */
     /* color: red!important; */
 }
 #aboutOjus {
